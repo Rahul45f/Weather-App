@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+  
+<body>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li class="apname"><a href="#">Weather App</a>
+      </li> <li><a href="#about">About Us</a></li>
+      <li><a href="#guide">User Guide</a></li>
+    </ul>
+    <div class="search"> 
+      <form class="frm" role="search"> 
+        <input id="city" class="btn" type="search" placeholder="Search City" aria-label="Search" /> 
+        <button class="srhbtn" type="submit" id="submit">Search</button> 
+      </form> 
+    </div> 
+    <div class="hamburger">&#9776;</div> <!-- â†� hamburger icon --> 
+  </nav> 
+  <div class="initial"> 
+    <div class="temp"> 
+      <h2 class="loc"><span id="name1"></span>, <span id="cntry"></span></h2> 
+      <h1 class="maintemp"><span id="temp"></span>&deg;C</h1> 
+    </div> 
+    <div class="other"> 
+      <p class="text"><span id="text"></span></p> 
+      <p class="avtemp">&uarr;35&deg;/30&deg;&darr;</p> 
+      <p class="feelslike">Feels Like <span id="feelslike"></span>&deg;</p> 
+    </div> 
+  </div> 
+  <div class="weather"> 
+    <div class="card"> 
+      <p class="cardhead">Humidity</p> 
+      <p class="value"><span id="humidity"></span>%</p> 
+    </div> 
+    <div class="card"> 
+      <p class="cardhead">Wind</p>
+      <p class="value"><span id="wind"></span> Km/h</p>
+    </div> 
+    <div class="card"> 
+      <p class="cardhead">Dew Point</p>
+      <p class="value"><span id="dew"></span>&deg;</p> 
+    </div>
+    <div class="card"> 
+      <p class="cardhead">Pressure</p> 
+      <p class="value"><span id="press"></span> mb</p> 
+    </div> 
+    <div class="card"> 
+      <p class="cardhead">Visibility</p> 
+      <p class="value"><span id="visi"></span> Km</p>
+    </div>
+    <div class="card"> 
+      <p class="cardhead">UV Index</p>
+      <p class="value"><span id="uv"></span></p> 
+    </div> 
+  </div>
+  <div class="aqi">
+    <div class="aqihead">Air Quality</div>
+    <table> 
+      <tr>
+        <td class="tabl">CO</td> 
+        <td class="tabl">O3</td> 
+        <td class="tabl">NO2</td>
+        <td class="tabl">SO2</td> 
+        <td class="tabl">PM 2.5</td> 
+        <td class="tabl">PM 10</td> 
+      </tr> 
+      <tr>
+        <td class="tabl"><span id="co"></span></td>
+        <td class="tabl"><span id="o3"></span></td>
+        <td class="tabl"><span id="no2"></span></td>
+        <td class="tabl"><span id="so2"></span></td> 
+        <td class="tabl"><span id="pm2_5"></span></td>
+        <td class="tabl"><span id="pm5"></span></td>
+      </tr> 
+    </table> 
+  </div> 
+  <script src="script.js"></script>
+</body> 
+</html>
